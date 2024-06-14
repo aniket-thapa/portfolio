@@ -31,10 +31,11 @@
         <h1>Contact Me</h1>
         <div class="contact-container">
           <div class="contact-form">
-            <form action="#" method="post">
+            <form id="contact-form" onsubmit="return validateForm()">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required />
               <label for="email">Email</label>
+              <span id="emailError"></span>
               <input type="email" id="email" name="email" required />
               <label for="message">Message</label>
               <textarea
@@ -45,6 +46,9 @@
               ></textarea>
               <button type="submit">Send Message</button>
             </form>
+            <!-- ********************************************* -->
+            <div id="response" class="response"></div>
+            <!-- ********************************************* -->
           </div>
           <div class="contact-details">
             <h2>Let's Connect</h2>
@@ -81,5 +85,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -97,6 +97,19 @@ a:hover {
   color: blueviolet;
 }
 
+.profile-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-right img {
+  border: 1px solid blueviolet;
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
 /* VIEW MY WORK BUTTON */
 .view-my-work-btn {
   margin-left: 50px;
@@ -174,8 +187,8 @@ a:hover {
 
 .work-card-right img {
   height: 300px;
-  width: 300px;
   border: 1px solid white;
+  object-fit: cover;
 }
 
 /* ABOUT SECTION */
