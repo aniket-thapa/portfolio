@@ -51,12 +51,19 @@ a:hover {
   font-weight: 500;
 }
 
+@media screen and (max-width: 700px) {
+  .nav-right {
+    display: none;
+  }
+}
+
 /* PROFILE SECTION */
 .my-profile {
   margin: 80px 20px 20px 20px;
   height: 500px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .profile-left {
@@ -67,20 +74,20 @@ a:hover {
 }
 
 .my-profile-greet {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .my-profile-intro {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: blueviolet;
 }
 
 .my-profile-description {
   margin: 20px 0 50px 0;
   font-weight: 350;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .resume-btn a {
@@ -130,13 +137,49 @@ a:hover {
   color: blueviolet;
 }
 
+@media screen and (max-width: 700px) {
+  .nav-container {
+    height: 10vh;
+  }
+
+  .my-profile {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+  }
+
+  .profile-left {
+    width: 95%;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .my-profile-description {
+    margin: 20px 0 40px 0;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .profile-right img {
+    width: 180px;
+    height: 180px;
+    border-radius: 180%;
+  }
+
+  .view-my-work-btn {
+    margin-left: 6px;
+    height: 10vh;
+  }
+}
+
 /* MY WORK SECTION */
 .my-work-container {
   margin: 40px 120px;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .work-card {
@@ -159,7 +202,7 @@ a:hover {
 }
 
 .work-card-left p {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -189,6 +232,29 @@ a:hover {
   height: 300px;
   border: 1px solid white;
   object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .my-work-container {
+    margin: 20px;
+  }
+
+  .work-card {
+    flex-direction: column-reverse;
+  }
+
+  .work-card-left {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-skills-btn {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* ABOUT SECTION */
@@ -584,4 +650,16 @@ a:hover {
 .footer-section a:hover {
   transition: color 0.2s;
   color: blueviolet;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-container {
+    padding: 0 40px;
+    width: 100vw;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
