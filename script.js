@@ -1,3 +1,17 @@
+// side-nav-bar
+document
+  .querySelector(".hamburger-menu")
+  .addEventListener("click", function () {
+    document.querySelector(".side-nav").style.width = "100%";
+  });
+
+document
+  .querySelector(".side-nav-close")
+  .addEventListener("click", function () {
+    document.querySelector(".side-nav").style.width = "0";
+  });
+
+
 // Form Submission //
 
 document
