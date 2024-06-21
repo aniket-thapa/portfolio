@@ -145,7 +145,7 @@ a:hover {
   .my-profile {
     flex-direction: column-reverse;
     align-items: center;
-    height: 80vh;
+    height: 78vh;
     margin: 0;
   }
 
@@ -169,7 +169,7 @@ a:hover {
 
   .view-my-work-btn {
     margin-left: 6px;
-    height: 10vh;
+    height: 12vh;
   }
 }
 
