@@ -10,7 +10,7 @@ document
   .querySelector(".side-nav-close")
   .addEventListener("click", function () {
     document.querySelector(".side-nav").style.width = "0";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "visible";
   });
 
 
