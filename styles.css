@@ -17,11 +17,25 @@ body {
 a {
   color: white;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Completely transparent */
+}
+
+i {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Completely transparent */
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Completely transparent */
 }
 
 a:hover {
   transition: color 0.3s;
   color: blueviolet;
+}
+
+a:focus {
+  outline: none; /* Remove the default focus outline */
+  background-color: transparent; /* Ensure no background color */
 }
 
 .highlight {
@@ -85,7 +99,7 @@ a:hover {
 }
 
 .side-nav a:hover {
-  color: #f1f1f1;
+  color: blueviolet;
 }
 
 .side-nav-close {
