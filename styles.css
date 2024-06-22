@@ -394,6 +394,21 @@ a:focus {
   width: 200px;
 }
 
+@media screen and (max-width: 700px) {
+  .about-section {
+    margin: 20px 15px;
+  }
+
+  .about-container {
+    margin: 0;
+    width: 90%;
+  }
+
+  .about-circular-image {
+    display: none;
+  }
+}
+
 /* PROJECT SECTION */
 
 .project-section {
