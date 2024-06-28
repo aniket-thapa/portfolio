@@ -224,7 +224,7 @@ a:focus {
   .my-profile {
     flex-direction: column-reverse;
     align-items: center;
-    height: 75vh;
+    height: 70vh;
     margin: 0;
   }
 
@@ -235,7 +235,7 @@ a:focus {
   }
 
   .my-profile-description {
-    margin: 20px 0 40px 0;
+    margin: 20px 0 20px 0;
     text-align: justify;
     padding: 0 10px;
   }
