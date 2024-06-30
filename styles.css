@@ -329,6 +329,15 @@ a:focus {
     text-align: center;
   }
 
+    .work-card-right {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .work-card-right img {
+    max-height: 200px;
+  }
+
   .card-skills-btn {
     flex-wrap: wrap;
     align-items: center;
