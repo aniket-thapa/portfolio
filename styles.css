@@ -65,6 +65,12 @@ a:focus {
   font-weight: 500;
 }
 
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* Hamburger menu styles */
 .hamburger-menu {
   display: none;
@@ -93,8 +99,7 @@ a:focus {
 .side-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  display: block;
+  font-size: 20px;
   transition: 0.3s;
 }
 
