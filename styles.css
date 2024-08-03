@@ -88,6 +88,15 @@ a:focus {
   gap: 6px;
 }
 
+.nav-link-color {
+  color: white;
+}
+
+.nav-link-color.active {
+  color: blueviolet;
+}
+
+
 /* Hamburger menu styles */
 .hamburger-menu {
   display: none;
