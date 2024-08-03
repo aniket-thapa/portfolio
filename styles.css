@@ -53,6 +53,23 @@ a:focus {
   align-items: center;
 }
 
+@media screen and (min-width: 700px) {
+  .main-container,
+  .home-main-container {
+    position: relative;
+  }
+
+  .nav-container {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* translucent */
+    backdrop-filter: blur(10px); /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    box-shadow: rgba(137, 43, 226, 0.3) 0px 1px;
+  }
+}
+
 .nav-left {
   font-size: 35px;
   font-weight: 500;
@@ -832,3 +849,5 @@ a:focus {
     justify-content: space-around;
   }
 }
+
+
