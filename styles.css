@@ -190,7 +190,8 @@ a:focus {
 .my-profile-intro {
   font-weight: 700;
   font-size: 2.5rem;
-  color: blueviolet;
+  color: #fff;
+  text-shadow: 2px 2px blueviolet;
 }
 
 .my-profile-description {
