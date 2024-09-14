@@ -200,6 +200,13 @@ a:focus {
   font-size: 1rem;
 }
 
+.resume-btn {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
 .resume-btn a {
   display: inline-block;
   border: 1px solid white;
@@ -247,7 +254,7 @@ a:focus {
   color: blueviolet;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .nav-container {
     height: 10vh;
   }
@@ -275,6 +282,12 @@ a:focus {
     width: 180px;
     height: 180px;
     border-radius: 180%;
+  }
+
+  .resume-btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .view-my-work-btn {
