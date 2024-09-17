@@ -65,7 +65,7 @@ a:focus {
   align-items: center;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .main-container,
   .home-main-container {
     position: relative;
