@@ -398,8 +398,7 @@ a:focus {
   }
 
   .work-card-right {
-    margin: 15px;
-    padding: 10px;
+    margin: 10px;
   }
 
   .work-card-right img {
@@ -539,6 +538,7 @@ a:focus {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -640,10 +640,15 @@ a:focus {
     padding: 10px;
   }
 
+  .project-image {
+    margin: 6px;
+    height: auto;
+  }
+
   .project-image img,
   .project-image .overlay {
-    max-height: 100%;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
   }
 
   .project-card.reverse {
