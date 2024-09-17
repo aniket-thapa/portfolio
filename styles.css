@@ -168,7 +168,7 @@ a:focus {
 .nav-left-new a:hover {
   color: blueviolet;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
     background-color: #10002b;
     color: white;
@@ -377,7 +377,7 @@ a:focus {
   object-fit: cover;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .my-work-container {
     margin: 20px;
   }
@@ -471,7 +471,7 @@ a:focus {
   width: 200px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .about-section {
     margin: 20px 15px;
   }
@@ -628,26 +628,22 @@ a:focus {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .project-container {
     width: 100%;
   }
 
   .project-card {
     flex-direction: column;
-
     border: 2px dotted rgba(137, 43, 226, 0.5);
     border-radius: 12px;
     padding: 10px;
   }
 
-  .project-image {
-    height: 230px;
-  }
-
   .project-image img,
   .project-image .overlay {
-    max-height: 210px;
+    max-height: 100%;
+    max-width: 100%;
   }
 
   .project-card.reverse {
@@ -822,7 +818,7 @@ a:focus {
   transition: background-color 0.3s, color 0.3s;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .contact-section {
     margin: 50px 20px;
     display: flex;
@@ -887,7 +883,7 @@ a:focus {
   color: blueviolet;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .footer-container {
     padding: 0;
     width: 100vw;
