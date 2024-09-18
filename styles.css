@@ -43,6 +43,10 @@ a:focus {
   background-color: transparent; /* Ensure no background color */
 }
 
+a:active {
+  text-decoration: underline;
+}
+
 .highlight {
   color: blueviolet;
 }
