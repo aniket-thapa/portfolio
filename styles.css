@@ -33,6 +33,11 @@ a:focus {
 a:active {
   text-decoration: underline;
 }
+.hamburger-menu i:active,
+.side-nav-close i:active {
+  transition: color 0.1s;
+  color: blueviolet;
+}
 .highlight {
   color: blueviolet;
 }
