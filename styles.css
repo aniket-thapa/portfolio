@@ -31,11 +31,12 @@ a:focus {
   background-color: transparent; /* Ensure no background color */
 }
 a:active {
+  transition: underline 0.2s;
   text-decoration: underline;
 }
 .hamburger-menu i:active,
 .side-nav-close i:active {
-  transition: color 0.1s;
+  transition: color 0.2s;
   color: blueviolet;
 }
 .highlight {
