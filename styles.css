@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;700&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Be Vietnam Pro", sans-serif;
+  /* font-family: 'Be Vietnam Pro', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   scroll-behavior: smooth;
 }
 body {
@@ -24,36 +25,33 @@ button,
 }
 a:hover {
   transition: color 0.3s;
-  color: blueviolet;
+  color: #58a6ff;
 }
 a:focus {
   outline: none; /* Remove the default focus outline */
   background-color: transparent; /* Ensure no background color */
 }
-a:active {
-  transition: underline 0.2s;
-  text-decoration: underline;
-}
+
 .hamburger-menu i:active,
 .side-nav-close i:active {
   transition: color 0.2s;
-  color: blueviolet;
+  color: #58a6ff;
 }
 .highlight {
-  color: blueviolet;
+  color: #58a6ff;
 }
 .main-container {
-  background: linear-gradient(to right, rgb(36, 13, 57), #000000);
+  background: linear-gradient(to left, #58a6ff29, #000000);
 } /* NAVIGATION SECTION */
 .nav-container {
   z-index: 2;
   position: sticky;
   top: 0;
-  background: #10002b;
-  /*  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); */
-  box-shadow: blueviolet 0px 1px;
-  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5); /* translucent */
+  backdrop-filter: blur(10px); /* blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: #58a6ff4d 0px 1px;
+  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +68,7 @@ a:active {
     background: rgba(0, 0, 0, 0.5); /* translucent */
     backdrop-filter: blur(10px); /* blur effect */
     -webkit-backdrop-filter: blur(10px); /* for Safari */
-    box-shadow: rgba(137, 43, 226, 0.3) 0px 1px;
+    box-shadow: rgba(88, 166, 255, 0.3) 0px 1px;
   }
 }
 .nav-left {
@@ -79,34 +77,36 @@ a:active {
 }
 .nav-right {
   display: flex;
-  gap: 3.5rem;
-  font-size: 18px;
-  font-weight: 500;
+  gap: 20px;
+  font-size: 1rem;
 }
 .nav-links a {
+  color: #e0e6eb;
   display: flex;
-  align-items: center;
-  gap: 6px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-.nav-link-color {
-  color: white;
+.nav-links a:hover {
+  color: #58a6ff;
+  transform: translateY(-3px);
 }
 .nav-link-color.active {
-  color: blueviolet;
-} /* Hamburger menu styles */
+  color: #58a6ff;
+}
+/* Hamburger menu styles */
 .hamburger-menu {
   display: none;
   font-size: 24px;
   cursor: pointer;
-} /* Side navigation styles */
+}
+/* Side navigation styles */
 .side-nav {
-  height: 100%;
+  height: 0;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 70px;
@@ -121,7 +121,7 @@ a:active {
   transition: 0.3s;
 }
 .side-nav a:hover {
-  color: blueviolet;
+  color: #58a6ff;
 }
 .side-nav-close {
   position: absolute;
@@ -142,11 +142,11 @@ a:active {
   font-weight: 500;
 }
 .nav-left-new a:hover {
-  color: blueviolet;
+  color: #58a6ff;
 }
 @media screen and (max-width: 800px) {
   body {
-    background-color: #10002b;
+    background-color: #000;
     color: white;
   }
   .nav-right {
@@ -177,7 +177,7 @@ a:active {
   font-weight: 700;
   font-size: 2.5rem;
   color: #fff;
-  text-shadow: 2px 2px blueviolet;
+  text-shadow: 2px 2px #58a6ff;
 }
 .my-profile-description {
   margin: 20px 0 50px 0;
@@ -198,9 +198,9 @@ a:active {
   transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
 .resume-btn a:hover {
-  border-color: blueviolet;
-  box-shadow: 1.5px 1.5px 1.5px rgba(137, 43, 226, 0.5);
-  color: blueviolet;
+  border-color: #58a6ff;
+  box-shadow: 1.5px 1.5px 1.5px #58a6ff50;
+  color: #58a6ff;
 }
 .profile-right {
   display: flex;
@@ -208,7 +208,7 @@ a:active {
   align-items: center;
 }
 .profile-right img {
-  border: 1px solid blueviolet;
+  border: 1px solid #58a6ff;
   border-radius: 300px;
   width: 300px;
   height: 300px;
@@ -226,13 +226,14 @@ a:active {
 }
 .view-my-work-btn a:hover {
   transition: all 0.3s;
-  border-color: blueviolet;
-  box-shadow: 1.5px 1.5px 1.5px rgba(137, 43, 226, 0.5);
-  color: blueviolet;
+  border-color: #58a6ff;
+  box-shadow: 2px 2px 2px #58a6ff50;
+  color: #58a6ff;
 }
 @media screen and (max-width: 800px) {
   .nav-container {
     height: 10vh;
+    padding: 10px 30px;
   }
   .my-profile {
     margin-top: 3px;
@@ -252,8 +253,8 @@ a:active {
     padding: 0 10px;
   }
   .profile-right img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 180%;
   }
   .resume-btn {
@@ -261,8 +262,13 @@ a:active {
     justify-content: center;
     align-items: center;
   }
+  .resume-btn a,
+  .view-my-work-btn a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
   .view-my-work-btn {
-    margin-left: 6px;
+    margin-left: 15px;
     height: 10vh;
   }
 } /* MY WORK SECTION */
@@ -279,6 +285,12 @@ a:active {
   align-items: center;
   gap: 20px;
   max-width: 1200px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.2s ease-in;
+}
+.work-card:hover {
+  background-color: #58a6ff28;
 }
 .work-card-left {
   width: 500px;
@@ -288,7 +300,7 @@ a:active {
 }
 .work-card-left h2 a {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .work-card-left p {
   font-size: 1rem;
@@ -303,14 +315,14 @@ a:active {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  background-color: #1f0b3fa3;
+  background-color: #58a6ff3c;
   padding: 2px 10px;
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: all 0.4s cubic-bezier(0.05, 0, 0, 1);
 }
 .card-skills-btn div:hover {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: #58a6ff25;
   cursor: pointer;
 }
 .work-card-right img {
@@ -325,7 +337,7 @@ a:active {
   }
   .work-card {
     flex-direction: column-reverse;
-    border: 2px dotted rgba(137, 43, 226, 0.5);
+    border: 2px dotted #58a6ff50;
     border-radius: 12px;
     padding: 10px;
     gap: 0;
@@ -366,7 +378,7 @@ a:active {
 .about-container h1 {
   font-weight: 500;
   font-size: 40px;
-  color: blueviolet;
+  color: #58a6ff;
   margin-bottom: 40px;
 }
 .about-container h2 {
@@ -387,10 +399,10 @@ a:active {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: white;
-  box-shadow: rgba(137, 43, 226, 0.4) -5px 5px,
-    rgba(137, 43, 226, 0.3) -10px 10px, rgba(137, 43, 226, 0.2) -15px 15px,
-    rgba(137, 43, 226, 0.1) -20px 20px, rgba(137, 43, 226, 0.05) -25px 25px;
+  background-color: #fff;
+  box-shadow: rgba(88, 166, 255, 0.4) -5px 5px,
+    rgba(88, 166, 255, 0.3) -10px 10px, rgba(88, 166, 255, 0.2) -15px 15px,
+    rgba(88, 166, 255, 0.1) -20px 20px, rgba(88, 166, 255, 0.05) -25px 25px;
 }
 .about-circular-image img {
   border: 1px solid white;
@@ -421,7 +433,7 @@ a:active {
   text-align: left;
   font-size: 40px;
   font-weight: 500;
-  color: blueviolet;
+  color: #58a6ff;
   margin-bottom: 40px;
 }
 .project-container {
@@ -488,11 +500,10 @@ a:active {
   font-size: 2rem;
   font-weight: 500;
   color: white;
+  transition: color 0.1s;
 }
 .project-details h2:hover {
-  transition: color 0.1s;
-  color: blueviolet;
-  cursor: pointer;
+  color: #58a6ff;
 }
 .project-details p {
   text-align: left;
@@ -525,7 +536,7 @@ a:active {
 .project-demo {
   margin-top: 20px;
   font-size: 14px;
-  color: blueviolet;
+  color: #58a6ff;
   transition: color 0.3s;
 }
 .project-demo:hover {
@@ -560,7 +571,10 @@ a:active {
     flex-direction: column;
     gap: 20px;
   }
-} /* SKILL SECTION */
+}
+/* SKILL SECTION */
+/*
+
 .skill-section {
   margin: 80px 20px;
   text-align: center;
@@ -568,7 +582,7 @@ a:active {
 .skill-section h1 {
   font-size: 40px;
   font-weight: 500;
-  color: blueviolet;
+  color: #58a6ff;
   margin-bottom: 40px;
 }
 .skill-container {
@@ -592,7 +606,7 @@ a:active {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .skill-card:hover {
-  border-left: 2px solid blueviolet;
+  border-left: 2px solid #58a6ff;
   transition: all 0.3s;
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -609,21 +623,25 @@ a:active {
 }
 .skill-details h2:hover {
   transition: all 0.3s;
-  color: blueviolet;
+  color: #58a6ff;
   cursor: pointer;
 }
 .skill-details p {
   font-size: 1rem;
   font-weight: 300;
   color: #cccccc;
-} /* CONTACT SECTION */
+}
+
+*/
+
+/* CONTACT SECTION */
 .contact-section {
-  margin: 80px 20px;
+  margin: 60px 20px;
 }
 .contact-section h1 {
   font-size: 2.5rem;
   font-weight: 500;
-  color: blueviolet;
+  color: #58a6ff;
   margin-bottom: 40px;
   margin-left: 150px;
 }
@@ -636,7 +654,7 @@ a:active {
 .contact-form {
   background-color: #1a1a1a;
   padding: 30px;
-  border-left: 2px solid blueviolet;
+  border-left: 2px solid #58a6ff;
   border-radius: 15px;
   width: 40%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.199);
@@ -665,14 +683,14 @@ a:active {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
-  background-color: blueviolet;
+  background-color: rgb(87, 165, 255);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 .contact-form button:hover {
-  background-color: rgba(137, 43, 226, 0.615);
-  transform: scale(1.02);
+  background-color: rgba(87, 165, 255, 0.615);
+  transform: scale(1.01);
 }
 .contact-details {
   width: 30%;
@@ -702,7 +720,7 @@ a:active {
 }
 @media screen and (max-width: 800px) {
   .contact-section {
-    margin: 50px 20px;
+    margin: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -710,12 +728,13 @@ a:active {
   }
   .contact-section h1 {
     font-size: 2rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   .contact-container {
     flex-direction: column;
   }
   .contact-form {
+    padding: 20px;
     width: 100%;
   }
   .contact-details {
@@ -727,7 +746,7 @@ a:active {
 }
 .social-links a:hover {
   color: white;
-  background-color: rgba(137, 43, 226, 0.875);
+  background-color: rgba(87, 165, 255, 0.5);
 }
 /* FOOTER SECTION */
 .footer-container {
@@ -751,7 +770,7 @@ a:active {
 }
 .footer-section a:hover {
   transition: color 0.2s;
-  color: blueviolet;
+  color: #58a6ff;
 }
 @media screen and (max-width: 800px) {
   .footer-container {
