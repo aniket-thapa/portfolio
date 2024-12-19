@@ -14,7 +14,98 @@
     <meta name="author" content="Aniket Thapa" />
     <title>Aniket Thapa - Skills</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="skill.css" />
+    <script
+      src="https://kit.fontawesome.com/9ca9aa7819.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .skills-container {
+        margin: 40px auto;
+        padding: 30px auto;
+        max-width: 1200px;
+        min-height: 80vh;
+      }
+      .skills-header {
+        display: block;
+        text-align: center;
+        margin: 60px auto;
+      }
+
+      .skills-header h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #58a6ff;
+      }
+
+      .skills-header p {
+        padding-top: 8px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #a1b1c6;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px 0;
+        padding: 20px;
+      }
+
+      .skills-category {
+        background: #161b22;
+        border: 2px solid #30363d;
+        padding: 15px;
+        border-radius: 8px;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .skills-category:hover {
+        background-color: #20262dbb;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .skills-category h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #58a6ff;
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      .skills-category h2::after {
+        content: '';
+        display: block;
+        height: 3px;
+        margin-top: 6px;
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #58a6ff, transparent);
+      }
+
+      .skills-category .skill-item {
+        font-size: 1.15rem;
+        margin: 6px 0;
+        color: #e1e6eb;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .skills-category .skill-item:hover {
+        transform: translateX(2px);
+        color: #58a6ff;
+      }
+
+      .bullet {
+        display: inline-block;
+        margin-right: 10px;
+        width: 5px;
+        height: 5px;
+        background-color: #58a6ff;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
     <div class="skill-main-container main-container">
@@ -27,27 +118,19 @@
         </div>
         <div class="nav-right">
           <div class="nav-links">
-            <a href="https://aniket-thapa.github.io/portfolio/"
-              ><i class="fa-solid fa-house"></i>Home</a
-            >
+            <a href="https://aniket-thapa.github.io/portfolio/">Home</a>
           </div>
           <div class="nav-links">
-            <a href="about.html"
-              ><i class="fa-solid fa-address-card"></i>About</a
-            >
+            <a href="about.html">About</a>
           </div>
           <div class="nav-links">
-            <a href="skill.html" class="nav-link-color active"
-              ><i class="fa-solid fa-graduation-cap"></i>Skills</a
-            >
+            <a href="skill.html" class="nav-link-color active">Skills</a>
           </div>
           <div class="nav-links">
-            <a href="project.html"
-              ><i class="fa-solid fa-trophy"></i>Projects</a
-            >
+            <a href="project.html">Projects</a>
           </div>
           <div class="nav-links">
-            <a href="contact.html"><i class="fa-solid fa-at"></i>Contact Me</a>
+            <a href="contact.html">Contact Me</a>
           </div>
         </div>
 
@@ -66,161 +149,78 @@
 
           <div class="side-nav-links">
             <div class="nav-links">
-              <a href="https://aniket-thapa.github.io/portfolio/"
-                ><i class="fa-solid fa-house"></i>Home</a
-              >
+              <a href="https://aniket-thapa.github.io/portfolio/">Home</a>
             </div>
             <div class="nav-links">
-              <a href="about.html"
-                ><i class="fa-solid fa-address-card"></i>About</a
-              >
+              <a href="about.html">About</a>
             </div>
             <div class="nav-links">
-              <a href="skill.html"
-                ><i class="fa-solid fa-graduation-cap"></i>Skills</a
-              >
+              <a href="skill.html" class="nav-link-color active">Skills</a>
             </div>
             <div class="nav-links">
-              <a href="project.html"
-                ><i class="fa-solid fa-trophy"></i>Projects</a
-              >
+              <a href="project.html">Projects</a>
             </div>
             <div class="nav-links">
-              <a href="contact.html"
-                ><i class="fa-solid fa-at"></i>Contact Me</a
-              >
+              <a href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </nav>
 
       <!-- SKILL SECTION -->
-      <section class="skill-section">
-        <h1>My Skills</h1>
-        <div class="skill-container">
-          <!-- Skill 1 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-react"></i>
-            </div>
-            <div class="skill-details">
-              <h2>React.js</h2>
-              <p>
-                Proficient in building dynamic user interfaces with React.js,
-                utilizing state and props for effective component-based
-                architecture.
-              </p>
+      <section class="skills-container" id="skills">
+        <div class="skills-header">
+          <h1>My Skills</h1>
+          <p>A summary of my technical expertise and tools I excel in.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skills-category">
+            <h2>Programming Languages</h2>
+            <div class="skill-item"><span class="bullet"></span>HTML5</div>
+            <div class="skill-item"><span class="bullet"></span>CSS3</div>
+            <div class="skill-item"><span class="bullet"></span>JavaScript</div>
+            <div class="skill-item"><span class="bullet"></span>Python</div>
+            <div class="skill-item"><span class="bullet"></span>C/C++</div>
+          </div>
+
+          <div class="skills-category">
+            <h2>Frameworks & Tools</h2>
+            <div class="skill-item"><span class="bullet"></span>Node.js</div>
+            <div class="skill-item"><span class="bullet"></span>Express.js</div>
+            <div class="skill-item"><span class="bullet"></span>Git/GitHub</div>
+            <div class="skill-item"><span class="bullet"></span>MySQL</div>
+            <div class="skill-item"><span class="bullet"></span>MongoDB</div>
+            <div class="skill-item"><span class="bullet"></span>Multer</div>
+            <div class="skill-item">
+              <span class="bullet"></span>EJS (Embedded JavaScript)
             </div>
           </div>
-          <!-- Skill 2 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-node-js"></i>
+          <div class="skills-category">
+            <h2>Other Skills</h2>
+            <div class="skill-item">
+              <span class="bullet"></span>Problem Solving
             </div>
-            <div class="skill-details">
-              <h2>Node.js</h2>
-              <p>
-                Experienced in server-side programming with Node.js, developing
-                scalable backend services and RESTful APIs.
-              </p>
+            <div class="skill-item">
+              <span class="bullet"></span>Advanced Research Skills
             </div>
-          </div>
-          <!-- Skill 3 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-python"></i>
+            <div class="skill-item">
+              <span class="bullet"></span>Team Collaboration
             </div>
-            <div class="skill-details">
-              <h2>Python</h2>
-              <p>
-                Skilled in Python for various applications, including data
-                analysis, machine learning, and scripting automation tasks.
-              </p>
+            <div class="skill-item">
+              <span class="bullet"></span>Creative Brainstorming
             </div>
-          </div>
-          <!-- Skill 4 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-js-square"></i>
+            <div class="skill-item">
+              <span class="bullet"></span>Informed Decision Maker
             </div>
-            <div class="skill-details">
-              <h2>JavaScript</h2>
-              <p>
-                Expert in JavaScript, with a strong understanding of ES6+
-                features, asynchronous programming, and DOM manipulation.
-              </p>
+            <div class="skill-item">
+              <span class="bullet"></span>Clear Communicator
             </div>
-          </div>
-          <!-- Skill 5 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-database"></i>
-            </div>
-            <div class="skill-details">
-              <h2>MySQL</h2>
-              <p>
-                Experienced in designing and managing relational databases with
-                MySQL, ensuring data integrity and efficient querying.
-              </p>
-            </div>
-          </div>
-          <!-- Skill 6 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-envira"></i>
-            </div>
-            <div class="skill-details">
-              <h2>MongoDB</h2>
-              <p>
-                Proficient in working with MongoDB, implementing NoSQL databases
-                for scalable and flexible data storage solutions.
-              </p>
-            </div>
-          </div>
-          <!-- Skill 7 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-server"></i>
-            </div>
-            <div class="skill-details">
-              <h2>Express.js</h2>
-              <p>
-                Skilled in using Express.js to build robust backend services and
-                APIs, integrating middleware for custom routing and handling
-                HTTP requests.
-              </p>
-            </div>
-          </div>
-          <!-- Skill 8 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <div class="skill-details">
-              <h2>C/C++</h2>
-              <p>
-                Strong foundation in C/C++ programming, with experience in data
-                structures and algorithm development.
-              </p>
-            </div>
-          </div>
-          <!-- Skill 9 -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fa-brands fa-git-alt"></i>
-            </div>
-            <div class="skill-details">
-              <h2>Git/GitHub</h2>
-              <p>
-                Proficient in version control with Git, collaborating on
-                projects using GitHub, and managing codebase efficiently with
-                branching and merging strategies.
-              </p>
+            <div class="skill-item">
+              <span class="bullet"></span>Time Management & Prioritization
             </div>
           </div>
         </div>
       </section>
-
       <!-- FOOTER SECTION -->
       <footer class="footer-container">
         <div class="footer-section">
