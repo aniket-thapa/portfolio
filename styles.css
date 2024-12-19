@@ -48,8 +48,8 @@ a:focus {
   position: sticky;
   top: 0;
   background: rgba(0, 0, 0, 0.5); /* translucent */
-  backdrop-filter: blur(10px); /* blur effect */
   -webkit-backdrop-filter: blur(10px); /* for Safari */
+  backdrop-filter: blur(10px); /* blur effect */
   box-shadow: #58a6ff4d 0px 1px;
   padding: 10px 60px;
   display: flex;
