@@ -337,7 +337,7 @@ a:focus {
   }
   .work-card {
     flex-direction: column-reverse;
-    border: 2px dotted #58a6ff50;
+    border: 2px solid #58a6ff50;
     border-radius: 12px;
     padding: 10px;
     gap: 0;
@@ -549,7 +549,7 @@ a:focus {
   }
   .project-card {
     flex-direction: column;
-    border: 2px dotted rgba(137, 43, 226, 0.5);
+    border: 2px solid #58a6ff50;
     border-radius: 12px;
     padding: 10px;
   }
