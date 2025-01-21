@@ -697,6 +697,9 @@ a:focus {
   background-color: rgba(87, 165, 255, 0.615);
   transform: scale(1.01);
 }
+#response {
+  min-height: 16px
+}
 .contact-details {
   width: 30%;
   text-align: left;
