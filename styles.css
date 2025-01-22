@@ -308,6 +308,7 @@ a:focus {
 }
 .card-skills-btn {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 20px;
 }
@@ -698,7 +699,7 @@ a:focus {
   transform: scale(1.01);
 }
 #response {
-  min-height: 16px
+  min-height: 16px;
 }
 .contact-details {
   width: 30%;
