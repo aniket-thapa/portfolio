@@ -44,7 +44,8 @@ img {
 .highlight {
   color: #58a6ff;
 }
-.main-container {
+.main-container,
+.gradient-bg {
   background: linear-gradient(to left, #58a6ff29, #000000);
 }
 
@@ -243,7 +244,7 @@ img {
 @media screen and (max-width: 800px) {
   .nav-container {
     height: 10vh;
-    padding: 10px 30px;
+    padding: 12px 24px;
   }
   .my-profile {
     margin-top: 3px;
@@ -263,9 +264,8 @@ img {
     padding: 0 10px;
   }
   .profile-right img {
-    width: 120px;
-    height: 120px;
-    border-radius: 180%;
+    width: 130px;
+    height: 130px;
   }
   .resume-btn {
     flex-direction: column;
@@ -332,7 +332,7 @@ img {
 }
 @media screen and (max-width: 800px) {
   .my-work-container {
-    margin: 20px;
+    padding: 40px 20px;
   }
   .work-card {
     flex-direction: column-reverse;
@@ -423,8 +423,10 @@ img {
 /* PROJECT SECTION */
 
 .project-section {
-  margin: 80px 0 40px;
-  padding: 0 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .project-section h1 {
   font-size: 2.5rem;
@@ -495,6 +497,21 @@ img {
   font-size: 1.5rem;
   font-weight: 600;
   transition: color 0.2s;
+}
+.project-details h2 a::after {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 12px;
+  background-image: url('./images/arrow-up-right.svg');
+  background-size: contain;
+  background-position: bottom;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.project-details h2 a:hover::after {
+  opacity: 1;
 }
 .project-details h2 a:hover {
   color: #58a6ff;
@@ -730,35 +747,26 @@ img {
 }
 /* FOOTER SECTION */
 .footer-container {
-  background-color: #161616;
-  padding: 0 100px;
+  padding: 40px 80px;
+  background: #111;
 }
 .footer-section {
-  height: 140px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 250;
+  flex-wrap: wrap;
+  color: #aaa;
+  font-size: 1.1rem;
+  font-weight: 100;
 }
-.footer-section span {
-  font-size: 18px;
-  font-weight: 200;
-}
-.footer-section a {
-  text-decoration: none;
-}
-.footer-section a:hover {
-  transition: color 0.2s;
-  color: #58a6ff;
-}
+
 @media screen and (max-width: 800px) {
   .footer-container {
-    padding: 0;
-    width: 100vw;
+    padding: 30px 20px;
   }
   .footer-section {
     flex-direction: column;
-    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
