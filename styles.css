@@ -336,9 +336,6 @@ img {
   }
   .work-card {
     flex-direction: column-reverse;
-    border: 2px solid #58a6ff50;
-    border-radius: 12px;
-    padding: 10px;
     gap: 0;
   }
   .work-card-left {
@@ -349,9 +346,6 @@ img {
   }
   .work-card-right {
     margin: 10px;
-  }
-  .work-card-right img {
-    max-height: 210px;
   }
   .card-skills-btn {
     flex-wrap: wrap;
