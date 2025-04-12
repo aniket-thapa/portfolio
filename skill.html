@@ -3,236 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniket Thapa — Skills</title>
+
+    <!-- SEO -->
     <meta
       name="description"
-      content="I am a Computer Science student specializing in web and software development. I have experience in both front-end and back-end technologies, as well as UI/UX design."
+      content="Explore the technical and soft skills of Aniket Thapa, a full-stack web developer experienced in Node.js, MongoDB, Express.js, and UI/UX design."
     />
     <meta
       name="keywords"
-      content="Aniket Thapa, Skills, Aniket Thapa Skills, Skills Aniket Thapa, Aniket Thapa Portfolio, Portfolio, Computer Science, web development, software development, front-end technologies, back-end technologies, Aniket UI/UX designer"
+      content="Aniket Thapa, Skills, Portfolio, Web Development, Full Stack, Node.js, MongoDB, Express.js, JavaScript"
     />
     <meta name="author" content="Aniket Thapa" />
-    <title>Aniket Thapa - Skills</title>
+
+    <!-- Styles & Icons -->
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/9ca9aa7819.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .skills-container {
-        margin: 40px auto;
-        padding: 30px auto;
-        max-width: 1200px;
-        min-height: 80vh;
-      }
-      .skills-header {
-        display: block;
-        text-align: center;
-        margin: 60px auto;
-      }
-
-      .skills-header h1 {
-        font-size: 3rem;
-        font-weight: 500;
-        color: #58a6ff;
-      }
-
-      .skills-header p {
-        padding-top: 8px;
-        font-size: 1.2rem;
-        font-weight: 300;
-        color: #a1b1c6;
-      }
-
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        width: 100%;
-        max-width: 1200px;
-        margin: 20px 0;
-        padding: 20px;
-      }
-
-      .skills-category {
-        background: #161b22;
-        border: 2px solid #30363d;
-        padding: 15px;
-        border-radius: 8px;
-        position: relative;
-        transition: background-color 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .skills-category:hover {
-        background-color: #20262dbb;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      }
-
-      .skills-category h2 {
-        font-size: 1.3rem;
-        font-weight: 400;
-        color: #58a6ff;
-        margin-bottom: 10px;
-        position: relative;
-      }
-
-      .skills-category h2::after {
-        content: '';
-        display: block;
-        height: 3px;
-        margin-top: 6px;
-        margin-bottom: 15px;
-        background: linear-gradient(90deg, #58a6ff, transparent);
-      }
-
-      .skills-category .skill-item {
-        font-size: 1.15rem;
-        margin: 6px 0;
-        color: #e1e6eb;
-        transition: transform 0.3s ease, color 0.3s ease;
-      }
-
-      .skills-category .skill-item:hover {
-        transform: translateX(2px);
-        color: #58a6ff;
-      }
-
-      .bullet {
-        display: inline-block;
-        margin-right: 10px;
-        width: 5px;
-        height: 5px;
-        background-color: #58a6ff;
-        vertical-align: middle;
-      }
-    </style>
   </head>
-  <body>
-    <div class="skill-main-container main-container">
-      <!-- NAVIGATION SECTION -->
-      <nav class="nav-container">
-        <div class="nav-left">
-          <a href="https://aniket-thapa.github.io/portfolio/"
-            >Aniket<span class="highlight">.</span></a
-          >
-        </div>
-        <div class="nav-right">
-          <div class="nav-links">
-            <a href="https://aniket-thapa.github.io/portfolio/">Home</a>
-          </div>
-          <div class="nav-links">
-            <a href="about.html">About</a>
-          </div>
-          <div class="nav-links">
-            <a href="skill.html" class="nav-link-color active">Skills</a>
-          </div>
-          <div class="nav-links">
-            <a href="project.html">Projects</a>
-          </div>
-          <div class="nav-links">
-            <a href="contact.html">Contact Me</a>
-          </div>
-        </div>
 
-        <div class="hamburger-menu">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </div>
-        <div class="side-nav">
-          <div class="nav-left-new">
-            <a href="https://aniket-thapa.github.io/portfolio/"
-              >Aniket<span class="highlight">.</span></a
-            >
-          </div>
-          <div class="side-nav-close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-
-          <div class="side-nav-links">
-            <div class="nav-links">
-              <a href="https://aniket-thapa.github.io/portfolio/">Home</a>
-            </div>
-            <div class="nav-links">
-              <a href="about.html">About</a>
-            </div>
-            <div class="nav-links">
-              <a href="skill.html" class="nav-link-color active">Skills</a>
-            </div>
-            <div class="nav-links">
-              <a href="project.html">Projects</a>
-            </div>
-            <div class="nav-links">
-              <a href="contact.html">Contact</a>
-            </div>
-          </div>
-        </div>
+  <body class="bg-black text-white">
+    <!-- NAVIGATION -->
+    <header class="nav-container">
+      <div class="nav-left text-2xl font-bold">
+        <a href="/">Aniket<span class="highlight">.</span></a>
+      </div>
+      <nav class="nav-right hidden md:flex gap-6">
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="skill.html" class="nav-link-color active">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <div class="hamburger-menu md:hidden">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
 
-      <!-- SKILL SECTION -->
-      <section class="skills-container" id="skills">
-        <div class="skills-header">
-          <h1>My Skills</h1>
-          <p>A summary of my technical expertise and tools I excel in.</p>
+      <div class="side-nav">
+        <div class="nav-left-new">
+          <a href="/">Aniket<span class="highlight">.</span></a>
         </div>
-        <div class="skills-grid">
-          <div class="skills-category">
-            <h2>Programming Languages</h2>
-            <div class="skill-item"><span class="bullet"></span>HTML5</div>
-            <div class="skill-item"><span class="bullet"></span>CSS3</div>
-            <div class="skill-item"><span class="bullet"></span>JavaScript</div>
-            <div class="skill-item"><span class="bullet"></span>Python</div>
-            <div class="skill-item"><span class="bullet"></span>C/C++</div>
-          </div>
+        <div class="side-nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav class="side-nav-links flex flex-col gap-4 mt-8">
+          <a href="/">Home</a>
+          <a href="about.html">About</a>
+          <a href="skill.html" class="nav-link-color active">Skills</a>
+          <a href="project.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-          <div class="skills-category">
-            <h2>Frameworks & Tools</h2>
-            <div class="skill-item"><span class="bullet"></span>Node.js</div>
-            <div class="skill-item"><span class="bullet"></span>Express.js</div>
-            <div class="skill-item"><span class="bullet"></span>Git/GitHub</div>
-            <div class="skill-item"><span class="bullet"></span>MySQL</div>
-            <div class="skill-item"><span class="bullet"></span>MongoDB</div>
-            <div class="skill-item"><span class="bullet"></span>Multer</div>
-            <div class="skill-item">
-              <span class="bullet"></span>EJS (Embedded JavaScript)
-            </div>
+    <!-- SKILLS SECTION -->
+    <section class="skills-container" id="skills">
+      <div class="skills-header">
+        <h1>My Skills</h1>
+        <p>A brief overview of my technical and soft skillsets.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-category">
+          <h2>Programming Languages</h2>
+          <div class="skill-item"><span class="bullet"></span>HTML5</div>
+          <div class="skill-item"><span class="bullet"></span>CSS3</div>
+          <div class="skill-item"><span class="bullet"></span>JavaScript</div>
+          <div class="skill-item"><span class="bullet"></span>Python</div>
+          <div class="skill-item"><span class="bullet"></span>C/C++</div>
+        </div>
+
+        <div class="skills-category">
+          <h2>Frameworks & Tools</h2>
+          <div class="skill-item"><span class="bullet"></span>Node.js</div>
+          <div class="skill-item"><span class="bullet"></span>Express.js</div>
+          <div class="skill-item"><span class="bullet"></span>Git & GitHub</div>
+          <div class="skill-item"><span class="bullet"></span>MySQL</div>
+          <div class="skill-item"><span class="bullet"></span>MongoDB</div>
+          <div class="skill-item"><span class="bullet"></span>Multer</div>
+          <div class="skill-item"><span class="bullet"></span>EJS</div>
+        </div>
+
+        <div class="skills-category">
+          <h2>Other Skills</h2>
+          <div class="skill-item">
+            <span class="bullet"></span>Problem Solving
           </div>
-          <div class="skills-category">
-            <h2>Other Skills</h2>
-            <div class="skill-item">
-              <span class="bullet"></span>Problem Solving
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Advanced Research Skills
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Team Collaboration
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Creative Brainstorming
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Informed Decision Maker
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Clear Communicator
-            </div>
-            <div class="skill-item">
-              <span class="bullet"></span>Time Management & Prioritization
-            </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Research & Analysis
+          </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Team Collaboration
+          </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Creative Brainstorming
+          </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Decision Making
+          </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Clear Communication
+          </div>
+          <div class="skill-item">
+            <span class="bullet"></span>Time Management
           </div>
         </div>
-      </section>
-      <!-- FOOTER SECTION -->
-      <footer class="footer-container">
-        <div class="footer-section">
-          <div>Let's connect!</div>
-          <div>
-            <i class="fa-solid fa-envelope"></i> Email:
-            <a href="mailto:aniketthapa.dev@gmail.com">aniketthapa.dev@gmail.com</a>
-          </div>
-          <div>&copy; 2024 by Aniket Thapa</div>
-        </div>
-      </footer>
-    </div>
-    <script src="script.js"></script>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-container">
+      <div class="footer-section">
+        <p>Let’s connect!</p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:aniketthapa.dev@gmail.com"
+            >aniketthapa.dev@gmail.com</a
+          >
+        </p>
+        <p>&copy; 2024 Aniket Thapa</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
