@@ -634,6 +634,19 @@ img {
   justify-content: center;
   gap: 50px;
 }
+/* Success/Error messages */
+.success {
+  color: #58ff9b;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.error {
+  color: #ff6961;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
 .contact-form {
   background-color: #1a1a1a;
   padding: 30px;
