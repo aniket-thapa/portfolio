@@ -19,6 +19,41 @@
       src="https://kit.fontawesome.com/9ca9aa7819.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .wave {
+        font-size: 2rem;
+        margin-right: 6px;
+        display: inline-block;
+        animation: wave 2s infinite ease-in-out;
+        transform-origin: 70% 70%;
+      }
+      @keyframes wave {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(14deg);
+        }
+        20% {
+          transform: rotate(-8deg);
+        }
+        30% {
+          transform: rotate(14deg);
+        }
+        40% {
+          transform: rotate(-4deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        60% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="home-main-container">
@@ -65,7 +100,7 @@
       <section class="my-profile" id="home">
         <div class="profile-left">
           <div class="my-profile-greet">
-            <span>&#128075;</span> Hello, my name is
+            <span class="wave">👋</span> Hello, my name is
           </div>
           <div class="my-profile-intro">Aniket Thapa</div>
           <div class="my-profile-description">
