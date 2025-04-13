@@ -298,7 +298,6 @@ img {
   gap: 30px;
   padding: 20px;
   border-radius: 10px;
-  animation: fadeInUp 0.8s ease both;
 }
 .work-card-left {
   flex: 1;
@@ -338,6 +337,7 @@ img {
     padding: 40px 20px;
   }
   .work-card {
+    padding: 0px;
     flex-direction: column-reverse;
     gap: 0;
   }
@@ -443,7 +443,6 @@ img {
   align-items: flex-start;
   gap: 30px;
   flex-wrap: wrap;
-  animation: fadeInUp 0.7s ease both;
 }
 .project-card.reverse {
   flex-direction: row-reverse;
