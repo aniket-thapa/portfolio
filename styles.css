@@ -177,7 +177,7 @@ img {
   opacity: 0.8;
 }
 .my-profile-intro {
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
   margin: 10px 0;
@@ -257,6 +257,9 @@ img {
     width: 95%;
     align-items: center;
     margin: 10px 0;
+  }
+  .my-profile-intro {
+    font-size: 1.4rem;
   }
   .my-profile-description {
     margin: 16px 0 18px 0;
